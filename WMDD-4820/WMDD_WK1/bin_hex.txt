@@ -1,0 +1,55 @@
+# 4820 week 1
+
+HEX 0x      BINARY 0b
+0           0000
+1           0001
+2           0010
+3           0011
+4           0100
+5           0101
+6           0110
+7           0111
+8           1000
+9           1001
+a           1010    10
+b           1011    11
+c           1100    12
+d           1101    13
+e           1110    14
+f           1111    15
+
+
+converting from hexadecimal to binary to decimal and back again.
+
+
+Binary place values
+512 256 128 64 32 16 8 4 2 1
+
+Hexadecimal place values
+4096 256 16 1
+
+
+converting from binary to decimal is relatively easy, you just add up all of the positions
+
+for example:
+
+    00100010 using the place values above we can see that the value for 32 and 2 are 1, or "on", 
+    if you imagine a value as being either on or off. so this binary number is 34.
+
+converting to hexadecimal from binary is also not all that tricky. hex values can all be represented by 4 bits. 
+so if we split our number of 8 in half we have 0010 | 0010 or two 2s so the Hexadecimal value would be 22
+
+the trickiest conversion of the bunch is hexadecimal to and from decimal. but as we have just seen 
+converting binary to and from hexadecimal isn't so bad, and neither is converting binary to decimal.
+so generally if you ever have to do this in your head, or without a calculator I would recommend using 
+binary as an intermediary stage.
+
+decimal -> binary -> hexadecimal
+hexadecimal -> binary -> decimal
+
+for example if we have 0x A2C:
+    first figure out how to express that as a binary number
+    1010 | 0010 | 1100 
+    or 2048 + 512 + 32 + 8 + 4 = 2604 so A2C = 2064. 
+
+

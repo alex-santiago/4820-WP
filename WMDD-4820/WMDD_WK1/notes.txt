@@ -1,0 +1,67 @@
+Sept 07 2016 wmdd_4820
+
+
+Binary and Hexadecimal
+0b
+0x
+
+
+github
+
+
+Values, Types and Operators:
+
+Numbers
+
+numbers in JavaScript are 64bit, which just indicates the amount of space in memory that is reserved
+to store numbers in JavaScript. 64bit is a pretty big number, 18 quintillion(an 18 with 18 zeros after it)
+unlike many programming languages JavaScript doesn't have different types of for integer and floats.
+both 8 and 8.0 are simply number type.
+
+Strings
+
+strings are used to represent text and are enclosed in quotations.
+"string"
+'string'
+are the same, just be consistent in whether you use double or single quotes
+
+to include things like new lines, spaces and other non-printing characters use a \. for example: "1\n2" would return
+1
+2
+\n indicates a new line.
+
+string concatenation "one " + "two" === "one two"
+
+Booleans
+
+booleans return either a true or false as their value.
+for example 3 < 10 would return true.
+
+operators that can be applied to Booleans themselves are Logical Operators. 
+|| or
+&& and
+
+ternary operator
+
+a ternary operator is often used as a short hand for an if statement.
+
+condition ? exp1 : exp2
+
+if the condition is true exp1 is returned, if it is false exp2 is returned.
+
+for example:
+    console.log(3 < 4 ? 1 : 2); will return 1 because it is true
+    console.log(4 < 3 ? 1 : 2); will return 2 because it is false
+
+
+we will look at Objects, Functions, Undefined values in later classes.
+
+
+Comments 
+in JavaScript comments are written as
+// single line comment
+or 
+/*
+multi line
+comments
+*/

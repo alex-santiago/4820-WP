@@ -1,0 +1,13 @@
+TASK 1 - Charpter 3 questions from TextBook with comments on every line of the javascript solution.
+
+
+javascript 2 - Personal banking logic:
+
+You have an income of 1500 per month.
+You need to transfer 500 to an account that your rent comes out of.
+	500 stays in your primary account for montly expenses,
+	200 is transferred into one investment account,
+	and the remaining 300 hundred to another account.
+
+Your program should make these trasnfers automatically when you get payed and keep track of the amount in all accounts.
+
