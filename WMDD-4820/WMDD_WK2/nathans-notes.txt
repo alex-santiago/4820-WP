@@ -1,0 +1,104 @@
+# JS sept 14 2016
+
+## topics  
+- expressions & statements
+- variables
+- control flow
+- conditionals if else else if
+- loops while and for
+
+## if there is time  
+- git and github
+
+## expressions & statements
+
+"A fragment of code that produces a value is called an expression" -from Eloquent JavaScript  
+a statement provides context for an expression within a program
+
+(x < 3) this is an expression  
+while (x < 3) this is a statement  
+x = 3 expression  
+var x = 3; statement  
+
+## variables  
+variables in programming are a way to attach data that can change to a space in memory that a program can access at different times as needed. for example: a program that keeps track of your monthly budget might have a bank balance variable and hopefully as your program runs this number goes up.
+
+variable names can be any name that is not a reserved word, see the link below for a list of reserved words.  
+variable names cannot include spaces or punctuation except for _ and $. generally variable names start with a lowercase letter and use 'camel case' ie variableName.
+
+    var nums = 3 + 3;
+    var n1 = 1, n2 = 2;
+    var aGreeting = 'hello';
+    var anArray = [1, 2, 3];
+
+[reserved words](http://mdn.beonex.com/en/JavaScript/Reference/Reserved_Words.html)
+
+## control flow
+in general your program executes one statement after another, sometimes though you will want to execute different parts of a program based on a condition. JavaScript allows us to do this with conditional execution.
+
+## conditional execution
+JavaScript, like most modern programming languages has an if conditional which allows you to execute different parts of a program based on a boolean expression.
+
+    if (condition){
+        do something;
+    }
+
+it is also possible to chose between two choices.
+
+    if (condition) {
+        do something;
+    } else {
+        do something else;
+    }
+
+and, you guessed it multiple things.
+
+    if (condtion){
+        do something;
+    } else if (condition 2) {
+        do something else;
+    } else {
+        do a third thing;
+    }
+
+## loops
+
+loops allow a program to repeat a section of code repeatedly, for as long as necessary.
+
+### while
+
+a while loop executes a block (the code inside {}) as long as the condition is true.
+
+    while (condition) {
+        do something;
+    }
+
+    var count = 0;
+    while(count < 10){
+        console.log(count);
+        count++;
+    }
+
+often a while loop includes a "counter" variable, a variable used to; count the number of times that the loop has been executed, or to control the number of times a loop is executed. This is so common that another type of loop is also quite common in many programming languages.
+
+### for
+
+    for (var counter = 0; counter < 10; counter++){
+        do something;
+    }
+
+    for (var i = 0; i < 9; i++) {
+        console.log(i);
+        if(conditon){
+            continue;
+        }
+    }
+
+#### breaking out of a loop
+
+break
+
+the break keyword immediately jumps out of loop continuing on to the next line in your code.
+
+continue
+the continue keyword stops the loop and returns to the start to check if the condition is still true

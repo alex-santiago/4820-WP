@@ -1,0 +1,9 @@
+Class agenda
+
+quiz
+grades from Robots, exercises
+events, interaction, clicking on things
+working whith the DOM
+working with an API, fetch
+data sisualization, simple client side app [ Final assignment ]
+more quizzes, the exam...

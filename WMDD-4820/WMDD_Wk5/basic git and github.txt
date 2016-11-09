@@ -1,0 +1,75 @@
+# basic git and github
+
+## get git
+
+[git for linux, mac and windows](https://git-scm.com/)
+
+## quickstart
+
+after installing git folling these instructions will create a local git repository on your machine.  
+git comes with git bash for windows, so you can use the unix terminal commands in powershell if you are running windows. enter the commands bellow and press enter.
+
+
+create a basic git config
+
+    git config --global user.name "your name"  
+    git config --global user.email "youemail@email.com"
+
+this creates a global minimal git config file in your home directory.
+
+create a directory and cd into it
+
+    mkdir test  
+    cd test
+
+add some content to the directory
+
+    touch README.md test.txt
+
+initialize the directory as a git repository
+
+    git init
+
+add the two empty files
+
+    git add .
+
+the '.' is short hand for all or everything.
+
+make your first commit
+
+    git commit -m 'first commit'
+
+the '-m' is for message and includes the following short message with your commit. if you leave this off your default editor will open, probably vim.  
+':q!' will exit vim without saving, if you aren't comfortable with vim.
+
+go to github.com login and hit the big green create new repository button.
+enter a name and short description, for now you can leave everything else set to the defaults.
+
+push your content to github  
+after creating a repository at github you should see a few options to create content.  
+copy and paste the two (one at a time) lines that look similar to the following into the terminal and hit enter.
+
+    git remote add origin https://github.com/your-user-name/repository-name.git
+    git push -u origin master
+
+if you don't see an error message you have succeeded. yay!  
+refresh your repository page and you should see a list of your two files.
+
+## additional resources
+
+### markdown
+
+[markdown syntax](https://daringfireball.net/projects/markdown/syntax )
+
+### beginners
+
+[try git](http://try.github.io/) interactive tutorials for beginners
+
+[atlassian git tutorials](https://www.atlassian.com/git/tutorials)
+
+### more advanced
+
+[git tips from the trenches](https://ochronus.com/git-tips-from-the-trenches/)
+
+[pro git](https://git-scm.com/book/en/v2)

@@ -1,0 +1,20 @@
+# week 8 oct 26 2016
+
+## agenda
+
+- quiz
+- grades from robot exercis
+- events, interaction, clicking on things
+- moving forward
+    1. working with the DOM
+    2. working with an API, fetch
+    3. data visualization, simple client side app.
+    4. more quizzes, the exam... all that good stuff.
+
+## mouseX, mouseY
+
+where is the mouse?
+
+clicking on an object
+
+working with circles p5 dist()

@@ -1,0 +1,23 @@
+# algorithmic thinking or pseudo code exercise 1
+
+personal banking
+
+write out the steps involved in a program that would keep track of the following bank accounts.  
+you can use pseudo code (example below) but aren't required to write any javascript.
+
+you have an income of 1500 per month.
+you need to transfer 500 to an account that your rent comes out of.
+500 stays in your primary account for monthly expenses
+200 is transferred into one investment account
+and the remaining 300 hundred another account.
+
+your program should make these transfers automatically when you get payed and keep track of
+the amount in all of these accounts
+
+
+## pseudo code example
+
+    if savings account receives payment
+        transfer 500 $ to rent account
+
+it is just plain english to express the logic of a program

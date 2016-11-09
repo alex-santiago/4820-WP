@@ -1,0 +1,40 @@
+# linters
+
+## what is a linter?
+
+a code linter is a tool that can help you with finding errors in your code and helps to enforce
+certain best practice style guidelines.
+
+for example:
+
+you have a variable 'smlSiz' and somewhere in your code you have accidentally
+typed 'smlsiz.' a linter can help you find these pesky little errors.
+
+    let smlSiz = 10
+
+## javascript linters
+
+there are a few out there, but i am only going to mention one:
+[standardjs](http://standardjs.com/index.html).
+
+## installing a linter
+
+to install standardjs, and many other tools for javascript you need two tools:  
+[node](https://nodejs.org/en/)  
+[npm](https://www.npmjs.com/)  
+
+fortunately node now comes with npm.
+
+you also need a code editor and a tool to run your linter in your code editor
+
+
+### atom  
+[atom](https://atom.io/)  
+[atom linter](https://atom.io/packages/linter)  
+
+### vim(or neovim)  
+[vim](http://www.vim.org/)  
+[neomake](https://github.com/neomake/neomake)
+
+there are plenty of other code editors and linters for other languages, i will
+leave it to you to explore if you are interested.
