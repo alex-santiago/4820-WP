@@ -9,7 +9,7 @@
   <main>
     <h1>the library</h1>
     <label for="authorsearch">Search for author by name:</label>
-    <input type="search" id="authorsearch" placeholder="Search for author by name">
+    <input type="search" id="authorSearch" placeholder="Search for author by name">
     <button type="button" onclick="authSearch()">search</button>
     <p id='result'></p>
 
@@ -22,7 +22,7 @@
     <p id='add-err'></p>
 
     <h2>books currently in the library</h2>
-    <button type="button" onclick="showAllBooks()">show books</button>
+    <button type="button" onclick="showAllBooks()" id="btn-lib">show books</button>
     <ol id="allTheBooks">
 
     </ol>
