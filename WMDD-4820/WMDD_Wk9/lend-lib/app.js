@@ -5,12 +5,12 @@ document.getElementById("btn-lib").addEventListener("mouseover", showAllBooks);
 
 
 let books = [
-  {author: 'Thomas Pynchon', title: 'Bleeding Edge'},
-  {author: 'Haruki Murakami', title: '1Q84'},
-  {author: 'John D MacDonald', title: 'Nightmare in Pink'},
-  {author: 'Ncholas Zakas', title: 'Understanding Ecmascript 6'}
+  {author: 'Thomas Pynchon', title: 'Bleeding Edge', genre: 'fiction', available: true},
+  {author: 'Haruki Murakami', title: '1Q84', genre: 'fiction', available: true},
+  {author: 'John D MacDonald', title: 'Nightmare in Pink', genre: 'mystery', available: true},
+  {author: 'Ncholas Zakas', title: 'Understanding Ecmascript 6', genre: 'javascript', available: false},
+  {author: 'Thomas Phillips', title: 'Long Slow Distance', genre: 'fiction', available: false}
 ]
-
 
 function authSearch () {
   let aName = document.getElementById('authorSearch').value
@@ -24,6 +24,27 @@ function authSearch () {
 }
 
 function authSearch () {
+  let aName = document.getElementById('authorSearch').value
+  let name = books.filter((x) => x.author.indexOf(aName) !== -1)
+  console.log(name.length)
+  if (name.length > 0) {
+    hideAllBooks('result')
+    name.forEach((x) => {
+      let listItem = document.createElement('li')
+      let textnode = document.createTextNode(`${x.title} by ${x.author} in ${x.genre}`)
+      listItem.appendChild(textnode)
+      document.getElementById('result').appendChild(listItem)
+    })
+  }
+  else {
+    let listItem = document.createElement('li')
+    let textnode = document.createTextNode(`sorry your search for ${aName} returned 0 books`)
+    listItem.appendChild(textnode)
+    document.getElementById('result').appendChild(listItem)
+  }
+}
+
+function authSearchRegEx () {
   let aName = document.getElementById('authorSearch').value;
   let arrMatch = [];
   let arrBooksNames = [];

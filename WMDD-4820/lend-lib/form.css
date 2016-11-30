@@ -1,0 +1,85 @@
+/* ============================================= */
+/* MENU BAR */
+.menu_bar {
+    display: inline;
+    margin: auto;
+}
+
+
+div#mng_users, div#mng_lib_books {
+    display: none;
+}
+
+/* ============================================= */
+/* FORM FIELDS */
+div.lend-form {
+    width: 45%;
+    margin: 2.5%;
+    float: left;
+    /*display: inline;*/
+}
+
+div.controls {
+    width: 100%;
+    clear: both;
+    display: block;
+}
+footer {
+    clear: both;
+}
+
+label, input {
+    display: block;
+    width: 50%;
+}
+
+label.text {
+    display: inline;
+}
+
+input[readonly], input[readonly]:focus {
+    background-color: #ccc;
+    color: #000;
+}
+
+label{
+    padding-top: 2%;
+}
+input{
+    padding:5px; 
+    border:2px solid #ee634c; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+label.search {
+    display: inline;
+    font-size: 0.8rem;
+}
+input.search{
+    display: inline;
+    height: 1rem;
+    max-width: 75px;
+    padding:0; 
+    border:2px solid #ee634c; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input:focus {
+    background: #eee;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding:5px 15px; 
+    background:#ee634c; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+button:hover {
+  background: #94ccab;
+}

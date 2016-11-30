@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lending library</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <header>
+    <h1>the library</h1>
+    <div>
+      <h2>Menu</h2>
+        <div class="menu_bar"><button type="button" id="btn_lib_usr">Library Users</button></div>
+        <div class="menu_bar"><button type="button" id="btn_lib_books">Library Books</button></div>
+    </div>
+      <div id="mng_users">
+        <h3>Manage Library Users:</h3>
+        <label for="usr_name">Name</label>
+        <input type="text" id="usr_name">
+        <label for="lib_id">Library ID:</label>
+        <input type="text" id="lib_id">
+        <div class="menu_bar">
+          <button type="button" id="btn_lst">List Usr</button>
+          <button type="button" id="btn_add">Add Usr</button>
+          <!-- <button type="button" id="btn_lookup">Get Usr</button> -->
+          <!-- <button type="button" id="btn_alter">Alter Usr</button> -->
+        </div>
+        <label id="err_state"></label>
+        <ol id='userlist'></ol>
+        <hr>
+      </div>
+  </header>
+  <main>
+    <div id="mng_lib_books">
+      <h3>Manage Library Books:</h3>
+      <label for="book_id">Book ID</label>
+      <input type="text" id="book_id" readonly>
+      <label for="book_name">Book Name</label>
+      <input type="text" id="book_name">
+      <label for="book_author">Book Author</label>
+      <input type="text" id="book_author">
+      <label for="book_genre">Book Genre</label>
+      <input type="text" id="book_genre">
+      <label for="book_copies">Total Book Copies</label>
+      <input type="text" id="book_copies">
+      <label for="book_available_copies">Available Book Copies</label>
+      <input type="text" id="book_available_copies">
+      <div class="menu_bar">
+        <label for="book_search" class="search">ID:</label>
+        <input type="number" id="book_search" class="search" placeholder="ID to list">
+        <button type="button" id="btn_listBook">List</button>
+        <button type="button" id="btn_addBook">Add</button>
+        <button type="button" id="btn_altBook">Alter</button>
+      </div>
+      <label id="err_state_lib"></label>
+      <hr>
+      <div class="menu_bar">
+        <button type="button" id="btn_lst_books">List All Books</button>
+      </div>
+    </div>
+      <h3>Search Books in Catalog:</h3>
+      <p>Search for a book by its title</p>
+      <input id="titleSearch" >
+      <button type="button" id="titSearch">search</button>
+      <p>Search for a book by author's by name</p>
+      <input id="authorSearch" >
+      <button type="button" id="autSearch">search</button>
+      <p>Search for a book by its genre</p>
+      <input id="genreSearch" >
+      <button type="button" id="genSearch">search</button>
+      <ol id='result'></ol>
+        <h3>Lend book from catalog:</h3>
+      <div class="lend-form">
+        <label for="book_get" >Get Book by ID</label>
+        <input type="number" id="book_get" placeholder="Book ID">
+        <button type="button" id="btn_listBookLend">List</button>
+        <label for="lendbook_id">Book ID</label>
+        <input type="text" id="lendbook_id" readonly>
+        <label for="lendbook_name">Book Name</label>
+        <input type="text" id="lendbook_name" readonly>
+        <label for="lendbook_total_copies">Total Book Copies</label>
+        <input type="text" id="lendbook_total_copies" readonly>
+        <label for="lendbook_available_copies">Available Book Copies</label>
+        <input type="text" id="lendbook_available_copies" readonly>
+        <label id="err_state_lend"></label>
+      </div>
+      <div class="lend-form">
+        <label for="user_get" >Get User by ID</label>
+        <input type="number" id="user_get" placeholder="User ID">
+        <button type="button" id="btn_listUser">List</button>
+        <label for="lenduser_id">User ID</label>
+        <input type="text" id="lenduser_id" readonly>
+        <label for="lenduser_name">User Name</label>
+        <input type="text" id="lenduser_name" readonly>
+      </div>
+      <div class="controls">
+        <div>
+          <button type="button" id="btn_lend">Lend Book</button>
+          <button type="button" id="btn_listuserloans">List User Loans</button>
+        </div>
+        <label class="text">Loan date:</label>
+        <label class="text" id="lblloandate"></label>
+        <label class="text">Due date:</label>
+        <label class="text" id="lblduedate"></label>
+        <label id="err_state_lend_user"></label>
+        <label class="text">Existing Book Loans:</label>
+        <ol id='Bookloans'></ol>
+      </div>
+  </main>
+  <footer>
+    <p>wmdd 4820 lending library 2016</p>
+  </footer>
+  <script src="app.js"></script>
+  <script src="users.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>
